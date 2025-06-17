@@ -35,7 +35,8 @@ h3 {
   --SLATE-600: #87879D;
   --SLATE-300: #D1D1DF;
   --WHITE: #FAFAFA;
-  --FOOTER-BG: overlay;
+  --HOVER-BTN-1: #71C0D4;
+  --HOVER-BTN-2: #B18BDD;
 
   /* GRADIENTS */
 
@@ -690,4 +691,25 @@ a:any-link {
     text-align: left;
   }
 
+}
+
+/* DESKTOP HOVER AND ACTIVE STATE */
+@media screen and (min-width: 992px) {
+  /* HERO BUTTON */
+  .meet__header-hero-content-cta-button:hover, 
+  .meet__header-hero-content-cta-button:focus-visible {
+    background-color: var(--HOVER-BTN-1);
+  }
+
+  .purple:hover, 
+  .purple:focus-visible {
+    background-color: var(--HOVER-BTN-2);
+  }
+
+  /* FOOTER BUTTON */
+  .meet__footer-hero-content-cta-button:hover, 
+  .meet__footer-hero-content-cta-button:focus-visible {
+    background-color: var(--HOVER-BTN-2);
+    
+  }
 }
